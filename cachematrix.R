@@ -1,8 +1,8 @@
-## R Programming: Programming Assignment 2: Lexical Scoping
+## R Programming, Programming Assignment 2: Lexical Scoping
 ##
 ## Function 'makeCacheMatrix' generates a list and functions
-## capable adding matrices and removing them from
-## the list. 
+## capable of adding matrices and removing them from
+## the list.
 ##  
 ## Function 'cacheSolve' checks if the list generated with 
 ## 'makeCacheMatrix' contains inverse of a matrix. If the 
