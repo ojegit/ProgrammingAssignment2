@@ -1,11 +1,16 @@
 ## R Programming: Programming Assignment 2: Lexical Scoping
 ##
-## Function 'makeCacheMatrix' is used to store and display
-## a matrix and its inverse. Function 'cacheSolve' checks
-## if inverse of matrix exists, if not, then calculates and
-## stores it.
+## Function 'makeCacheMatrix' generates a list and functions
+## capable adding matrices and removing them from
+## the list. 
+##  
+## Function 'cacheSolve' checks if the list generated with 
+## 'makeCacheMatrix' contains inverse of a matrix. If the 
+## inverse does not exist then it is calculated and added
+## to the list.
 
-## Store and display matrix and its inverse
+## Create a list which contains capabilities for 
+## setting and getting values of matrix and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 	mat <- NULL
@@ -22,8 +27,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Check if inverse of a matrix exists in the cache. If it 
-## doesn't then calculate it.
+## Check if inverse of a matrix exists in the cache generated
+## with 'makeCacheMatrix'. If it doesn't, then calculate 
+## inverse and put it in the cache.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
